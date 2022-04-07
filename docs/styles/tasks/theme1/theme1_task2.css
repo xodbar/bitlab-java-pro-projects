@@ -1,0 +1,11 @@
+main section.solution table {
+    font-size: 150%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+main section.solution table input[type=text], input[type=datetime-local],
+input[type=button], button, select {
+    font-size: 80%;
+    width: 100%;
+}
