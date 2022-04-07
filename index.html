@@ -2,31 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/content.css">
 	<title>Main | Web Basics</title>
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="#">Main</a></li>
-				<li><a href="content/content_navigation.html">Tasks & Projects</a></li>
-				<li><a href="#">Contacts</a></li>
+			<ul class="nav_links">
+				<li><a href="https://github.com/xodbar/bitlab-java-pro-projects">Show project in Github</a></li>
+				<li>Main</li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
 		<div class="info">
-			<h1>Hello, World!</h1>
-			<p>
-				Welcome to my webpage with all my practice tasks and projects on Web-Basics course on Bitlab.<br>
-				Please, press on "Tasks" to go to tasks list (in navigation bar).
-			</p>
+			<div class="wrapper">
+				<h1 align="center">Hello, World!</h1>
+				<p>&nbspWelcome to Web Basics page. Here you can find my "Web Basics" course's tasks.
+				Use links below to navigate the page</p>
+				<hr>
+				<h3>Links</h3>
+				<ul>
+					<li><a href="content/content_navigation.html">Tasks by themes</a></li>
+					<li><a href="https://youtu.be/dQw4w9WgXcQ">In development...</a></li>
+					<li><a href="https://youtu.be/dQw4w9WgXcQ">In development...</a></li>
+				</ul>
+			</div>
 		</div>
 	</main>
 
 	<footer>
-		<small>2022, xodbar</small>
+		<ul class="footer_links">
+			<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px" height="32px"></a></li>
+		</ul>
 	</footer>
 </body>
 </html>
