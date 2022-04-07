@@ -1,0 +1,13 @@
+main section.solution form table {
+    font-size: 120%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+main section.solution form table input[type=text], input[type=datetime-local],
+input[type=button], input[type=date], input[type=number], button, select {
+    font-size: 80%;
+    width: 100%;
+}
+
+main section.solution form table

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link rel="stylesheet" href="../../../styles/tasks/theme1/theme1_task6.css">
+	<title>Task 1.6 | WEB</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="theme1_task5.html">< Previous task</a></li>
+			<li>Task 1.6</li>
+			<li><a href="#">Next theme task ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper">
+		<section class="description">
+			<h2>Description</h2>
+			<pre>
+	Создайте мини веб страницу используя таблицы и элементы ввода, форму для регистрации.
+	Примерный дизайн, должен быть похожим на это:
+			</pre>
+		</section>
+
+		<hr>
+
+		<section class="solution">
+			<h2>Solution</h2>
+			<form action="#" id="registration_form">
+				<table cellspacing="17px">
+					<tbody>
+					<tr>
+						<td><label for="name">Имя</label></td>
+						<td><label for="surname">Фамилия</label></td>
+						<td><label for="login">Логин</label></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="name" placeholder="Имя" name="name_field"></td>
+						<td><input type="text" id="surname" placeholder="Фамилия" name="surname_field"></td>
+						<td><input type="text" id="login" placeholder="Логин" name="login_field"></td>
+					</tr>
+					<tr>
+						<td><label for="country">Страна</label></td>
+						<td><label for="city">Город</label></td>
+						<td><label for="street">Улица</label></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="country_field" id="country">
+								<option value="KZ">Казахстан</option>
+								<option value="RU">Россия</option>
+								<option value="CN">Китай</option>
+							</select>
+						</td>
+						<td>
+							<select name="city_field" id="city">
+								<option value="TDK">Талдыкорган</option>
+								<option value="ALA">Алматы</option>
+								<option value="SHM">Шымкек</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" name="street_field" id="street" placeholder="Улица">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<button type="submit">Загрузить данные</button>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px"
+		                                              height="32px"></a></li>
+	</ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link rel="stylesheet" href="../../../styles/tasks/theme1/theme1_task3.css">
+	<title>Task 1.3 | WEB</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="theme1_task2.html">< Previous task</a></li>
+			<li>Task 1.3</li>
+			<li><a href="theme1_task4.html">Next task ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper">
+		<section class="description">
+			<h2>Description</h2>
+			<pre>
+	Создайте мини веб страницу используя таблицы и элементы ввода, форму для регистрации студентов в университет.
+			</pre>
+		</section>
+
+		<hr>
+
+		<section class="solution">
+			<h2>Solution</h2>
+			<form action="#" id="registration_form">
+				<table cellpadding="15px">
+					<tbody>
+					<tr>
+						<td><label for="name">Имя</label></td>
+						<td><input type="text" name="name_field" id="name"></td>
+					</tr>
+					<tr>
+						<td><label for="surname">Фамилия</label></td>
+						<td><input type="text" name="surname_field" id="surname"></td>
+					</tr>
+					<tr>
+						<td><label for="patronymic">Отчество</label></td>
+						<td><input type="text" name="patronymic_field" id="patronymic"></td>
+					</tr>
+					<tr>
+						<td><label for="hometown">Родной город</label></td>
+						<td>
+							<select name="hometown_field" id="hometown">
+								<option value="TDK">Талдыкорган</option>
+								<option value="ALA">Алматы</option>
+								<option value="SHM">Шымкек</option>
+								<option value="AST">Нур-Султан</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Пол</td>
+						<td>
+							<input type="radio" name="gender_field" id="male" checked>
+							<label for="male">Мужской</label>
+							<br>
+							<input type="radio" name="gender_field" id="female">
+							<label for="female">Женский</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="birth_date">Дата рождения:</label></td>
+						<td><input type="date" name="birthDate_field" id="birth_date"></td>
+					</tr>
+					<tr>
+						<td><label for="previous_education">Образование</label></td>
+						<td>
+							<select name="previousEducation_field" id="previous_education">
+								<option value="RFMSH_ALA">РФМШ (г. Алматы)</option>
+								<option value="NIS_ALA">НИШ (г. Алматы)</option>
+								<option value="KTL_ALA">КТЛ (г. Алматы)</option>
+								<option value="LMNSV_TDK">СШЛ №5 (г. Талдыкорган)</option>
+								<option value="NIS_TDK">НИШ (г. Талдыкорган)</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="unt_points">Баллы ЕНТ</label></td>
+						<td>
+							<input type="number" name="untPoints_field" id="unt_points"
+							       min="0" max="140" value="0" step="1">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button type="submit" id="registration_button">Зарегистрировать</button>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px"
+		                                              height="32px"></a></li>
+	</ul>
+</footer>
+</body>
+</html>

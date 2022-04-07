@@ -1,0 +1,6 @@
+main section.solution form#registration_form table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 120%;
+}
