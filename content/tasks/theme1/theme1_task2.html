@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link rel="stylesheet" href="../../../styles/tasks/theme1/theme1_task2.css">
+	<title>Task 1.2 | WEB</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="theme1_task1.html">< Previous task</a></li>
+			<li>Task 1.2</li>
+			<li><a href="#">Next task ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper">
+		<section class="description">
+			<h2>Description</h2>
+			<pre>
+Создайте форму для заказа бургера. Получатся, пользователь будет самостоятельно выбирать, что ему нужно добавить в ингридиенты бургера.
+
+Наша форма будет содержать такие параметры как:
+
+- Выбор типа булочки
+
+- Тип мяса
+
+- Опции: помидор, солёные огурцы
+
+- Текстовые поля: адресс, имя покупателя
+
+- Желаемое время доставки
+
+- Выбор бургера: чизбургер, чикенбургер и т.д.
+
+Используйте таблицу для того чтобы красиво разложить элементы по структуре:
+			</pre>
+		</section>
+
+		<hr>
+
+		<section class="solution">
+			<h2>Solution</h2>
+			<table id="task12" cellspacing="30px">
+				<thead>
+				<tr>
+					<th>Label</th>
+					<th>Option</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><label for="bread_type">Тип булочки:</label></td>
+					<td>
+						<select name="bread_type_options" id="bread_type">
+							<option value="default" selected="selected" disabled="disabled">
+								Выберите тип булочки
+							</option>
+							<option value="hamburger_bread">Булочки для гамбургеров</option>
+							<option value="cheeseburger_bread">Булочки для чизбургеров</option>
+							<option value="chicken_burger_bread">Булочки для чикенбургеров</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="meat_type">Тип мяса:</label></td>
+					<td>
+						<select name="meat_type_options" id="meat_type">
+							<option value="default" selected="selected" disabled="disabled">
+								Выберите тип мяса
+							</option>
+							<option value="beef">Говядина</option>
+							<option value="chicken">Курица</option>
+							<option value="assorted">Ассорти</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Опции:</td>
+					<td>
+						<input type="checkbox" name="burger_options" id="tomato">
+						<label for="tomato">помидор</label>
+						<br>
+						<input type="checkbox" name="burger_options" id="pickles">
+						<label for="pickles">соленые огурцы</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="client_address">Адрес:</label></td>
+					<td>
+						<input type="text" name="client_address_field" id="client_address" placeholder="Введите адрес">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="client_fullName">ФИО Заказчика</label></td>
+					<td>
+						<input type="text" name="client_fullName_field" id="client_fullName" placeholder="Введите ФИО">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="preferred_deliveryTime">Желаемое время доставки:</label></td>
+					<td>
+						<input type="datetime-local" name="preferred_deliveryTime_field" id="preferred_deliveryTime">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="burger_type">Выбор бургера:</label></td>
+					<td><select name="burger_type_options" id="burger_type">
+						<option value="default" selected="selected" disabled="disabled">Выберите тип бургера</option>
+						<option value="hamburger">Гамбургер</option>
+						<option value="cheeseburger">Чизбургер</option>
+						<option value="chicken_burger">Чикенбургер</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button id="make_order">Заказать</button>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px" height="32px"></a></li>
+	</ul>
+</footer>
+</body>
+</html>
