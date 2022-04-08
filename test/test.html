@@ -6,7 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
 
-	<style></style>
+	<style>
+        #kek {
+            text-decoration: none;
+            color: black;
+        }
+
+        #kek:hover {
+            background-image: url(https://lh3.googleusercontent.com/UKmSPKIMUeAbSxwkxmG3ImwMiyB1FwoRG68SgUC6LSsECdDB7q9T1hi_HvAIAiCY1KbusLAW1c1OEvSZrHEiJPNV=w640-h400-e365-rj-sc0x00ffffff);
+            background-size: cover;
+            cursor: help;
+        }
+	</style>
 </head>
 <body>
 <h2>Таблица</h2>
@@ -61,7 +72,9 @@
 		<td>Ячейка №1</td>
 		<td>Ячейка №2</td>
 		<td>Ячейка №3</td>
-		<td>Ячейка №4</td>
+		<td>
+			<a href="https://youtu.be/Us3CrkIiizc" id="kek">Ячейка ??</a>
+		</td>
 		<td>Ячейка №5</td>
 	</tr>
 	<tr>
@@ -213,11 +226,11 @@
 			<tbody>
 			<tr>
 				<td><label for="name1">Имя</label></td>
-				<td><input type="text" name="name1_field" id="name1" /></td>
+				<td><input type="text" name="name_field" id="name1" /></td>
 			</tr>
 			<tr>
 				<td><label for="surname1">Фамилия</label></td>
-				<td><input type="text" name="surname1_field" id="surname1" /></td>
+				<td><input type="text" name="surname_field" id="surname1" /></td>
 			</tr>
 			<tr>
 				<td><label for="patronymic">Отчество</label></td>
@@ -406,7 +419,7 @@
 			<tr>
 				<td colspan="2" align="center">
 					<button type="submit" id="make_order">Заказать</button>
-					<button type="reset" id="reset_data">Сбросить</button>
+					<button type="reset" id="reset_order">Сбросить</button>
 				</td>
 			</tr>
 			</tbody>
@@ -507,7 +520,7 @@
 			<tr>
 				<td><label for="name">Имя</label></td>
 				<td><label for="surname">Фамилия</label></td>
-				<td><label for="login">Логин</label></td>
+				<td><label for="login1">Логин</label></td>
 			</tr>
 			<tr>
 				<td>
@@ -529,7 +542,7 @@
 				<td>
 					<input
 							type="text"
-							id="login"
+							id="login1"
 							placeholder="Логин"
 							name="login_field"
 					/>
@@ -571,6 +584,29 @@
 			</tr>
 			</tbody>
 		</table>
+	</form>
+</fieldset>
+<br /><br />
+
+<fieldset style="width: 10%">
+	<legend>Войти</legend>
+	<form action="#" id="login">
+		<input
+				type="text"
+				name="loginEmail_field"
+				id="login_email"
+				placeholder="Введите email"
+		/>
+		<br /><br />
+		<input
+				type="password"
+				name="loginPassword_field"
+				id="login_password"
+				placeholder="Введите пароль"
+		/>
+		<br /><br />
+		<button type="submit" onclick="">Войти</button>
+		<button type="reset">Сбросить</button>
 	</form>
 </fieldset>
 </body>
