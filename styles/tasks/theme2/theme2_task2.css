@@ -1,39 +1,151 @@
-.solution_content {
-    width: 95%;
-    min-height: 500px;
-    border: 2px solid grey;
+body, html {
+    padding: 0;
+    margin: 0;
 }
 
-.solution_content .header {
-    background-color: #0000a9;
-    padding: 0 15px;
-    color: white;
+header {
     display: flex;
     flex-wrap: wrap;
+    background-color: darkblue;
+    color: white;
+    padding: 0 30px;
 }
 
-.solution_content .header h1 {
+header h2 {
     width: 50%;
     padding: 0;
+    margin: 10px 0 10px 0;
 }
 
-.solution_content .header .solution_nav_links {
+header nav {
     width: 50%;
 }
 
-.solution_content .header .solution_nav_links ul {
-    font-size: 100%;
+header nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    height: 100%;
+}
+
+header nav ul li {
+    padding-top: 14px;
     float: right;
-    height: 50%;
+    text-align: center;
+    margin: 0 2%;
 }
 
-.solution_content .header .solution_nav_links ul li {
-    display: inline;
-}
-
-.solution_content .header .solution_nav_links ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
+    color: white;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main aside.sign_in {
+    padding: 30px;
+    width: 15%;
+}
+
+main aside.sign_in a {
+    text-decoration: none;
+    color: #0000a9;
+    font-weight: bolder;
+}
+
+main aside.sign_in label, input, button {
+    display: block;
+}
+
+main aside.sign_in label {
+    margin-bottom: 5px;
+}
+
+main aside.sign_in input {
+    margin-bottom: 15px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+main aside.sign_in button {
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+main aside.sign_in button:hover {
+    background-color: #009a00;
+    cursor: pointer;
+}
+
+main aside.sign_in label {
+    text-transform: uppercase;
+}
+
+main div.content_wrapper {
+    padding: 5px;
+    width: 55%;
+}
+
+main div.content_wrapper div.article {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main div.content_wrapper div.article h2 {
+    color: darkblue;
+}
+
+main div.content_wrapper div.article img {
+    width: 100%;
+    height: 250px;
+}
+
+main div.content_wrapper div.article a {
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+main aside.tables {
+    padding: 30px;
+    width: 21%;
+}
+
+main aside.tables table {
+    width: 100%;
+    border: 1px solid white;
+}
+
+main aside.tables table th {
+    background-color: black;
+    color: white;
+}
+
+main aside.tables table tr:first-child {
+    background-color: #007500;
+    color: white;
+}
+
+main aside.tables table tr.first {
+    background-color: #87ff87;
+    color: #000000;
+}
+
+main aside.tables table tr.last {
+    background-color: #ff8787;
+    color: #000000;
+}
+
+main aside.tables table tr {
+    background-color: #f3f3f3;
+    color: #000000;
+    text-align: center;
 }
