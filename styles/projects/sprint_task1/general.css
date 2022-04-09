@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.solution_block {
+    text-align: center;
+}
+
+.solution_block_items {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.person_item {
+    width: 22%;
+    border: 2px solid #f1f1f1;
+    text-align: center;
+    margin: auto;
+}
+
+.person_item p {
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+ }
+
