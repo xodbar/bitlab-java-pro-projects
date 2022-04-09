@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link rel="stylesheet" href="../../../styles/tasks/theme2/theme2_task1.css">
+	<title>Task 2.1 | WEB</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="../theme1/theme1_task6.html">< Previous task</a></li>
+			<li>Task 2.1</li>
+			<li><a href="#">Next theme task ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper">
+		<section class="description">
+			<h2>Description</h2>
+			<pre>
+	Создайте мини веб страницу используя таблицы и элементы ввода, форму для регистрации.
+	Примерный дизайн, должен быть похожим на это:
+			</pre>
+		</section>
+
+		<hr>
+
+		<section class="solution">
+			<h2>Solution</h2>
+			<div style="width: 40%; margin: 0 auto; display: flex; flex-wrap: wrap">
+				<fieldset style="width: 100%">
+					<legend>Форма выбора фильма и кинотеатра</legend>
+					<form action="#" id="user_film_form" style="width: 100%;">
+						<label for="film_name" style="width: 100%;">Название фильма:</label>
+						<input type="text" name="filmName_field" id="film_name" placeholder="Название фильма"
+						       style="width: 90%; margin: 5px 0 20px 0">
+						<label for="chosen_cinema" style="width: 50%; display: inline-block">Кинотеатры:</label>
+						<label for="chosen_hour" style="width: 50%;">Время сеанса</label>
+						<select name="chosenCinema_field" id="chosen_cinema" style="width: 40%; margin-top: 5px">
+							<option value="cinema1">Кинотеатр Paramount City</option>
+							<option value="cinema2">Кинотеатр Kinoplexx</option>
+							<option value="cinema3">Кинотеатр Cinema3d</option>
+						</select>
+						<select name="chosenTime_field" id="chosen_hour" style="width: 20%; margin-left: 10%">
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						<select name="chosenTime_field" id="chosen_minute" style="width: 20%">
+							<option value="1">00</option>
+							<option value="5">05</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+							<option value="20">20</option>
+							<option value="25">25</option>
+							<option value="30">30</option>
+							<option value="35">35</option>
+							<option value="40">40</option>
+							<option value="45">45</option>
+							<option value="50">50</option>
+							<option value="55">55</option>
+							<option value="60">60</option>
+						</select>
+						<button id="find_button" style="background-color: #2f2f2f; color: white; margin-top: 15px; padding: 3px 5px">Поиск Фильма</button>
+					</form>
+				</fieldset>
+			</div>
+			<div style="width: 40%; margin: 0 auto; display: flex; flex-wrap: wrap">
+				<fieldset style="width: 100%">
+					<legend>Форма выбора фильма и кинотеатра</legend>
+					<form action="#" id="user_film_form2" style="width: 100%;">
+						<div>
+							<label for="cinema_name2">Название фильма</label>
+							<input type="text" name="cinemaName_field"
+							       id="cinema_name2" placeholder="Название фильма" style="width: 90%; margin: 5px auto 20px; padding: 5px">
+						</div>
+						<div style="display: inline-block; width: 50%">
+							<label for="chosen_cinema2">Кинотеатры:</label>
+							<select name="chosenCinema_field" id="chosen_cinema2" style="width: 100%">
+								<option value="cinema1">Кинотеатр Paramount City</option>
+								<option value="cinema2">Кинотеатр Kinoplexx</option>
+								<option value="cinema3">Кинотеатр Cinema3d</option>
+							</select>
+						</div>
+						<div style="display: inline; width: 50%">
+							<label for="chosen_hour2">Время сеанса</label>
+							<select name="chosenTime_field" id="chosen_hour2" style="width: 25%">
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<select name="chosenTime_field" id="chosen_minute2" style="width: 20%">
+								<option value="1">00</option>
+								<option value="5">05</option>
+								<option value="10">10</option>
+								<option value="15">15</option>
+								<option value="20">20</option>
+								<option value="25">25</option>
+								<option value="30">30</option>
+								<option value="35">35</option>
+								<option value="40">40</option>
+								<option value="45">45</option>
+								<option value="50">50</option>
+								<option value="55">55</option>
+								<option value="60">60</option>
+							</select>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+		</section>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px"
+		                                              height="32px"></a></li>
+	</ul>
+</footer>
+</body>
+</html>
