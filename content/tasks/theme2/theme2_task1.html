@@ -15,7 +15,7 @@
 		<ul class="nav_links">
 			<li><a href="../theme1/theme1_task6.html">< Previous task</a></li>
 			<li>Task 2.1</li>
-			<li><a href="#">Next theme task ></a></li>
+			<li><a href="theme2_task2.html">Next theme task ></a></li>
 		</ul>
 	</nav>
 </header>
@@ -77,7 +77,7 @@
 				</fieldset>
 			</div>
 			<div style="width: 40%; margin: 0 auto; display: flex; flex-wrap: wrap">
-				<fieldset style="width: 100%">
+				<!--<fieldset style="width: 100%">
 					<legend>Форма выбора фильма и кинотеатра</legend>
 					<form action="#" id="user_film_form2" style="width: 100%;">
 						<div>
@@ -94,8 +94,8 @@
 							</select>
 						</div>
 						<div style="display: inline; width: 50%">
-							<label for="chosen_hour2">Время сеанса</label>
-							<select name="chosenTime_field" id="chosen_hour2" style="width: 25%">
+							<label for="chosen_hour2" style="width: 100%">Время сеанса</label>
+							<select name="chosenTime_field" id="chosen_hour2" style="width: 20%">
 								<option value="17">17</option>
 								<option value="18">18</option>
 								<option value="19">19</option>
@@ -121,6 +121,50 @@
 							</select>
 						</div>
 					</form>
+				</fieldset>-->
+			</div>
+
+			<div>
+				<fieldset style="display: flex; flex-wrap: wrap; width: 60%; margin: 50px auto">
+					<legend>Форма поиска фильма v2</legend>
+					<div style="width: 100%; margin-bottom: 30px">
+						<label for="film_name2" style="display: block">Название фильма:</label>
+						<input style="width: 98%; margin-top: 8px; padding: 5px" type="text" name="test" id="film_name2"
+						       placeholder="Название фильма">
+					</div>
+					<div style="width: 50%"><label for="id1" style="display: block">Кинотеатры</label>
+						<select name="" id="id1" style="width: 90%; padding: 5px; margin-top: 5px;">
+							<option value="cinema1">Кинотеатр Paramount City</option>
+							<option value="cinema2">Кинотеатр Kinoplexx</option>
+							<option value="cinema3">Кинотеатр Cinema3d</option>
+						</select></div>
+					<div style="width: 50%; margin-left: auto"><label for="id2" style="display: block">Время сеанса</label>
+						<select name="" id="id2" style="width: 47%; padding: 5px; margin-top: 5px;">
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						<select name="" id="" style="width: 47%; margin-left: 11px; padding: 5px">
+							<option value="1">00</option>
+							<option value="5">05</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+							<option value="20">20</option>
+							<option value="25">25</option>
+							<option value="30">30</option>
+							<option value="35">35</option>
+							<option value="40">40</option>
+							<option value="45">45</option>
+							<option value="50">50</option>
+							<option value="55">55</option>
+							<option value="60">60</option>
+						</select>
+					</div>
+					<button style="background-color: black; color: white; padding: 5px 10px; margin-top: 15px;">Поиск фильма</button>
 				</fieldset>
 			</div>
 		</section>

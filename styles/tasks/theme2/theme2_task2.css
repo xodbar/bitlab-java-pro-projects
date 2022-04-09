@@ -1,0 +1,39 @@
+.solution_content {
+    width: 95%;
+    min-height: 500px;
+    border: 2px solid grey;
+}
+
+.solution_content .header {
+    background-color: #0000a9;
+    padding: 0 15px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solution_content .header h1 {
+    width: 50%;
+    padding: 0;
+}
+
+.solution_content .header .solution_nav_links {
+    width: 50%;
+}
+
+.solution_content .header .solution_nav_links ul {
+    font-size: 100%;
+    list-style: none;
+    overflow: hidden;
+    float: right;
+    height: 50%;
+}
+
+.solution_content .header .solution_nav_links ul li {
+    display: inline;
+}
+
+.solution_content .header .solution_nav_links ul li a {
+    color: white;
+    text-decoration: none;
+}
