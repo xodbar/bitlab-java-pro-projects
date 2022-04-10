@@ -4,13 +4,16 @@ body, html {
 }
 
 .solution_block {
-    text-align: center;
 }
 
 .solution_block_items {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+}
+
+.solution_block h2.solution_block_heading {
+    text-align: center;
 }
 
 .person_item {
@@ -25,3 +28,134 @@ body, html {
     text-align: justify;
  }
 
+.course {
+    width: 23%;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+.course:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.27);
+    transition: .5s;
+}
+
+.course .course_image {
+    width: 100%;
+}
+
+.course .course_content {
+    padding: 15px;
+}
+
+.course .course_content .course_name {
+    margin-bottom: 15px;
+}
+
+.course .course_lecturer {
+    text-align: right;
+    font-style: italic;
+    font-weight: lighter;
+    color: #6c757d;
+    margin: 0 0 10px 0;
+}
+
+.course .course_tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course .course_tags .course_tag_professional {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.course .course_tags .course_tag_beginner {
+    background-color: #eceb98;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.course .course_tags .course_tag_topSale {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.course .course_tags .course_tag_topCourse {
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.course .course_description {
+    text-align: justify;
+    color: darkslategray;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.course .course_price {
+    display: flex;
+}
+
+.course .course_price .current_price {
+    margin-right: 25px;
+}
+
+.course .course_price .old_price {
+    width: 50%;
+    color: #3d3c0a;
+    font-weight: lighter;
+    text-decoration: line-through #3d3c0a;
+}
+
+.course .read_more_button, .put_bid_button {
+    padding: 7px 12px;
+    margin-right: 5px;
+}
+
+.course .read_more_button {
+    background-color: #0d6efd;
+    border-radius: 4px;
+    border: 1px solid #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+.course .put_bid_button {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.course .read_more_button:hover {
+    background-color: #085cc9;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.course .put_bid_button:hover {
+    background-color: #085cc9;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
