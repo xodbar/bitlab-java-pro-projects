@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 0;
+    background-color: #701818;
+    padding: 0 25px;
+    display: flex;
+}
+
+header h2 {
+    width: 50%;
+    margin: 10px 0;
+}
+
+header nav {
+    width: 46%;
+}
+
+header nav ul.nav_links {
+    display: flex;
+    float: right;
+    width: 60%;
+    margin-top: 12px;
+}
+
+header nav ul.nav_links li {
+    list-style: none;
+    display: inline;
+    margin: auto;
+}
+
+header nav ul.nav_links a {
+    text-decoration: none;
+    color: grey;
+}
+
+main {
+    margin-top: 50px
+}
+
+main div.top_announcements {
+    padding: 50px;
+    height: 250px;
+}
+
+main div.top_announcements div.announcement_image {
+    width: 67%;
+    height: 100%;
+    float: left;
+    background-image: url(https://i.pinimg.com/originals/38/41/f2/3841f2916eb2658aaa09266f5dcfbd7d.jpg);
+    background-size: cover;
+}
+
+main div.top_announcements div.announcement_description {
+    width: 31%;
+    float: right;
+}
+
+main div.top_announcements div.announcement_description p {
+    line-height: 22px;
+}
+
+main div.top_announcements div.announcement_description h2 {
+    font-weight: lighter;
+}
+
+main div.top_announcements div.announcement_description button.announcement_button {
+    width: 130px;
+    height: 40px;
+    background-color: #4182ff;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+main div.divisor {
+    width: 100%;
+    text-align: center;
+    background-color: #545454;
+    color: white;
+    padding: 10px 0;
+}
+
+main div.division {
+    width: 100%;
+}
+
+main table.division_table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main table.division_table td.division_table_item {
+    border: 1px solid #c9c9c9;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+}
+
+main table.division_table td.division_table_item:hover {
+    box-shadow: rgba(101, 101, 101, 0.26) 5px 5px;
+    transition: .5s;
+}
+
+main table.division_table td.division_table_item div.item_body {
+    background-color: white;
+    height: 90%;
+    padding: 15px;
+}
+
+
+main table.division_table td.division_table_item div.item_body h3 {
+    margin: 5px auto;
+    font-size: 180%;
+    background-color: white;
+}
+
+main table.division_table td.division_table_item div.item_footer {
+    height: 10%;
+    padding: 10px;
+    margin: 0;
+    border-top: 1px solid #c9c9c9;
+    background-color: #f1f1f1;
+}
+
+main table.division_table td.division_table_item div.item_footer button {
+    font-size: 105%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #2c6fff;
+    color: white;
+    font-weight: lighter;
+}
+
+main table.division_table td.division_table_item div.item_footer button:hover {
+    background-color: #0049ee;
+    cursor: pointer;
+    transition: .5s;
+}
