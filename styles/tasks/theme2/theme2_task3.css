@@ -1,0 +1,143 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, serif;
+}
+
+header {
+    background-color: #15334a;
+    color: white;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+header h2 {
+    width: 50%;
+}
+
+header h2 span#field_name {
+    font-weight: lighter;
+}
+
+header nav {
+    width: 45%;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    float: left;
+    height: 100%;
+}
+
+header nav ul li a {
+    font-size: 100%;
+    text-decoration: none;
+    display: block;
+    color: #486e8c;
+    margin: 25px 15px;
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    transition: .5s;
+}
+
+main {
+    width: 100%;
+    margin: 85px 0 85px 0;
+    height: 100%;
+}
+
+main div.greeting {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #63707c;
+    color: white;
+    text-align: center;
+}
+
+main div.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div.products h2:first-child {
+    text-align: center;
+    width: 100%;
+}
+
+main div.product_item {
+    width: 23%;
+    height: 340px;
+    margin: auto;
+    border: 1px solid #b7b7b7;
+}
+
+main div.product_item:hover {
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.27);
+    transition: .5s;
+}
+
+main div.product_item img.product_item_image {
+    width: 100%;
+    height: 205px;
+}
+
+main div.product_item div.product_item_description {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 120%;
+}
+
+main div.product_item div.product_item_description h2 {
+    margin: 15px 0 15px 0;
+}
+
+main div.product_item div.product_item_description h4 {
+    font-weight: lighter;
+    margin: 5px 0 5px 0;
+}
+
+main div.product_item div.product_item_description button.product_item_but_button {
+    background-color: #3e5de3;
+    color: white;
+    border: 0;
+    padding: 5px 15px;
+}
+
+main div.product_item div.product_item_description button.product_item_but_button:hover {
+    background-color: #5274fd;
+    transition: .5s;
+    cursor: pointer;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+footer h5 {
+    font-weight: lighter;
+}
