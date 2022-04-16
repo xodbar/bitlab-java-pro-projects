@@ -27,6 +27,11 @@ header {
     margin: 0;
 }
 
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
 .header .controls {
     width: 50%;
     text-align: right;
@@ -116,6 +121,10 @@ main {
     color: #1f1f1f;
 }
 
+.profile .my_items ul li#active a {
+    color: #0000a9;
+}
+
 .profile .my_items ul li a:hover {
     text-decoration: none;
     color: #0000a9;
@@ -182,6 +191,11 @@ main {
 .recommendation a {
     text-decoration: none;
     color: black;
+}
+
+.recommendation:hover {
+    background-color: #f3f3f3;
+    transition: .2s;
 }
 
 .recommendation h4 {

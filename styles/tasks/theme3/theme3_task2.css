@@ -1,0 +1,55 @@
+.user_item {
+    display: flex;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.user_item .user_image {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_item .user_image img {
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    margin: 0;
+}
+
+.user_item .user_info {
+    width: 80%;
+}
+
+.user_item .user_info h3 {
+    margin-top: 0;
+}
+
+.user_item .user_info button {
+    background-color: #808080;
+    padding: 7px 10px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.user_item .user_info button:hover {
+    background-color: #0202bd;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.user_item .user_remove button {
+    background-color: #e31900;
+    padding: 7px 10px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.user_item .user_remove button:hover {
+    background-color: #ff1900;
+    cursor: pointer;
+    transition: .2s;
+}
