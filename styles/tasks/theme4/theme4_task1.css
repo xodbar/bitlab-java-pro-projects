@@ -539,3 +539,198 @@ hr {
 .content_wrapper .main_content {
     height: 150px;
 }
+
+.main_friends {
+    width: 55%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main_friends_wrapper {
+    width: 92%;
+    margin: auto;
+}
+
+.top_first {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.top_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switcher {
+    display: flex;
+    justify-content: center;
+}
+
+.switcher h4:first-child {
+    border-bottom: 1px solid blue;
+}
+
+.switcher h4:last-child {
+    margin-left: 20px;
+}
+
+.switcher h4 {
+    padding: 15px 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.switcher span {
+    margin-left: 5px;
+    color: grey;
+}
+
+.top_all button {
+    height: 25px;
+    padding: 0 15px;
+    background-color: #6584ce;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+
+.top_all button:hover {
+    cursor: pointer;
+    background-color: #3c6bda;
+}
+
+.top_second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.top_second h4 {
+    color: #4157b2;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.top_second .search_field * {
+    color: grey;
+}
+
+.top_second .search_field input {
+    background: none;
+    border: 0;
+    margin-left: 10px;
+}
+
+.top_second .search_field input:focus {
+    outline: 0;
+}
+
+.main_friends_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_friends_wrapper .main_friends_items .friend {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_avatar {
+    width: 13%;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_avatar img {
+    width: 100%;
+    border-radius: 500px;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_bio {
+    width: 75%;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_bio h4 {
+    color: #3e5de3;
+    font-weight: bold;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_bio p {
+    color: grey;
+    margin: 5px 0;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_options {
+    align-self: flex-start;
+    font-size: 130%;
+    color: grey;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_bio a {
+    color: #3e5de3;
+    text-decoration: none;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.main_friends_wrapper .main_friends_items .friend .friend_bio i {
+    font-size: 10%;
+    color: grey;
+    margin: 0 10px;
+}
+
+.right_options {
+    width: 25%;
+}
+
+.horizontal_switcher {
+    width: 90%;
+    margin-left: auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 2px 0;
+}
+
+.horizontal_switcher .switcher_items {
+    background-color: white;
+}
+
+.horizontal_switcher a {
+    display: flex;
+    margin: 5px 0;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #4d60b0;
+}
+
+.horizontal_switcher a:hover {
+    color: #4076ec;
+    transition: .2s;
+}
+
+.horizontal_switcher a span {
+    width: 79%;
+    margin-left: 25px;
+}
+
+.horizontal_switcher .switcher_items a:first-child {
+    background-color: #f3f3f3;
+    border-left: 3px solid #6184d0;
+    color: black;
+    font-weight: bold;
+}
+
+.horizontal_switcher .friends_list {
+    display: flex;
+}
+
+.horizontal_switcher .friends_list i {
+    margin-left: 5px;
+    font-size: 70%;
+    margin-top: 5px;
+}
