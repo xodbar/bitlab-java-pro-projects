@@ -5,563 +5,198 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
-
-	<style>
-        #kek {
-            text-decoration: none;
-            color: black;
-        }
-
-        #kek:hover {
-            background-image: url(https://lh3.googleusercontent.com/UKmSPKIMUeAbSxwkxmG3ImwMiyB1FwoRG68SgUC6LSsECdDB7q9T1hi_HvAIAiCY1KbusLAW1c1OEvSZrHEiJPNV=w640-h400-e365-rj-sc0x00ffffff);
-            background-size: cover;
-            cursor: help;
-        }
-	</style>
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://kit.fontawesome.com/bb867f31e9.js"
+	        crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-<h1>Лекция №1</h1>
-<hr>
-<h2>Заголовки</h2>
-<div class="headings">
-	<h1>Заголовок 1</h1>
-	<h2>Заголовок 2</h2>
-	<h3>Заголовок 3</h3>
-	<h4>Заголовок 4</h4>
-	<h5>Заголовок 5</h5>
-	<h6>Заголовок 6</h6>
-</div>
-<div class="paragraphs">
-	<h2>Параграфы с форматированным текстом</h2>
-	<p>Простой параграф: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aspernatur, autem doloribus fugiat illo magni modi necessitatibus nemo nesciunt officiis pariatur perspiciatis quam quas sed suscipit voluptatibus. Distinctio, reiciendis?</p>
-	<p>Параграф с жирным текстом: <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> Debitis deserunt <strong>dicta doloribus eius expedita facilis laudantium</strong> quod vitae. Aut cum cumque deleniti iure, maxime numquam perspiciatis reiciendis repellendus reprehenderit voluptates.</p>
-	<p>Параграф с курсивом: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aspernatur <i>cupiditate, debitis dolor dolorem dolores eos et fugit maiores</i> obcaecati officia possimus quae <em>quas quibusdam reiciendis sed tempore ut</em> voluptatem!</p>
-	<p>Параграф с курсивом и жирным текстом: Lorem ipsum dolor sit amet, <b><i>consectetur adipisicing elit. Distinctio dolorem earum est, illo non similique</i></b> ullam? Amet doloribus fuga ipsam iste labore magni molestias perferendis quam quis voluptatum. Modi, reiciendis.</p>
-	<p>Параграф с возведением в степень и спуском в индекс: Lorem<sup>2</sup> dolor sit amet<sub>50</sub>, consectetur adipisicing elit. Ab accusamus aperiam architecto assumenda deserunt iure
-		magnam maiores, minus nam quaerat quod repellat temporibus voluptas. Ab incidunt iusto nobis quidem quo.</p>
-</div>
-<div class="single_tags">
-	<h2>Одинарные теги</h2>
-	<h3>Разделитель hr (horizontal rule)</h3>
-	<hr>
-	<h3>Перевод на<br> новую<br>строку</h3>
-	<h3>Заранее форматированный текст (pre):</h3>
-	<pre>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	Alias consectetur corporis error eum expedita impedit incidunt
-itaque labore necessitatibus nulla quam quis, rerum sapiente similique
-	sit. Assumenda omnis quaerat totam.
-	</pre>
-	<h3>Картинки</h3>
-	Картинка без дополнительных атрибутов
-	<img src="https://cdn-icons-png.flaticon.com/512/2784/2784461.png" alt="student">
-	<br>
-	Картинка с установленной шириной и длиной
-	<img src="https://cdn-icons-png.flaticon.com/512/2784/2784461.png" alt="student 2" width="100px" height="150px">
-
-	<hr>
-	<h2>Списки</h2>
-	<h3>Маркированный список</h3>
-	<ul>
-		<li>Элемент списка №1</li>
-		<li>Элемент списка №2</li>
-		<li>Элемент списка №3</li>
-		<li>Элемент списка №4</li>
-		<li>Элемент списка №5</li>
-	</ul>
-	<h3>Маркированный список со ссылками</h3>
-	<ul>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №1</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №2</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №3</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №4</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №5</a></li>
-	</ul>
-	<h3>Нумерованный список</h3>
-	<ol>
-		<li>Элемент списка №1</li>
-		<li>Элемент списка №2</li>
-		<li>Элемент списка №3</li>
-		<li>Элемент списка №4</li>
-		<li>Элемент списка №5</li>
-	</ol>
-	<h3>Нумерованный список со ссылками</h3>
-	<ol>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №1</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №2</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №3</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №4</a></li>
-		<li><a href="https://google.kz">Элемент списка со ссылкой №5</a></li>
-	</ol>
-</div>
-
-<br><br><br><br><br><br><br><br><br><br>
-<h1>Лекция №2</h1>
-<hr>
-<h2>Таблица</h2>
-<table border="1px" cellpadding="15px" cellspacing="15px">
-	<!-- пример таблицы -->
-	<thead>
-	<tr>
-		<th>Заголовок 1</th>
-		<th>Заголовок 2</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>Запись 1</td>
-		<td>Запись 2</td>
-	</tr>
-	<tr>
-		<td>Запись 3</td>
-		<td>Запись n</td>
-	</tr>
-	</tbody>
-</table>
-
-<br /><br /><br />
-
-<table>
-	<thead>
-	<tr>
-		<th>Заголовок таблицы №1</th>
-		<th>Заголовок таблицы №2</th>
-		<th>Заголовок таблицы №3</th>
-		<th>Заголовок таблицы №4</th>
-		<th>Заголовок таблицы №5</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>Ячейка №1</td>
-		<td>Ячейка №2</td>
-		<td>Ячейка №3</td>
-		<td>Ячейка №4</td>
-		<td>Ячейка №5</td>
-	</tr>
-	<tr>
-		<td>Ячейка №1</td>
-		<td>Ячейка №2</td>
-		<td>Ячейка №3</td>
-		<td>Ячейка №4</td>
-		<td>Ячейка №5</td>
-	</tr>
-	<tr>
-		<td>Ячейка №1</td>
-		<td>Ячейка №2</td>
-		<td>Ячейка №3</td>
-		<td>
-			<a href="https://youtu.be/Us3CrkIiizc" id="kek">Ячейка ??</a>
-		</td>
-		<td>Ячейка №5</td>
-	</tr>
-	<tr>
-		<td>Ячейка №1</td>
-		<td>Ячейка №2</td>
-		<td>Ячейка №3</td>
-		<td>Ячейка №4</td>
-		<td>Ячейка №5</td>
-	</tr>
-	<tr>
-		<td>Ячейка №1</td>
-		<td>Ячейка №2</td>
-		<td>Ячейка №3</td>
-		<td>Ячейка №4</td>
-		<td>Ячейка №5</td>
-	</tr>
-	</tbody>
-</table>
-
-<hr />
-<h2>Инпуты</h2>
-<form action="#" id="test_form">
-	<!--form - это тег который содержит в себе инпуты для получения определенной категории информации от пользователя
-	action - атрибут, который говорит что делать после отправки данных этой формы
-	id - обязателен-->
-	<label for="type_text">Текстовое поле</label>
-	<input
-			type="text"
-			id="type_text"
-			name="typeText_field"
-			placeholder="Text"
-	/>
-	<br /><br /><br />
-	<label for="type_password">Текстовое поле (пароль):</label>
-	<input
-			type="password"
-			id="type_password"
-			name="typePassword_field"
-			placeholder="Password"
-	/>
-	<br /><br /><br />
-	<label for="type_email">Текстовое поле (email):</label>
-	<input
-			type="email"
-			id="type_email"
-			name="typeEmail_field"
-			placeholder="helloworld@email.box"
-	/>
-	<br /><br /><br />
-	<label for="type_button">Кнопка (input):</label>
-	<input
-			type="button"
-			id="type_button"
-			name="typeButton_field"
-			value="Hello, World!"
-	/>
-	<br /><br /><br />
-	<label for="type_file">Выбор файла:</label>
-	<input type="file" id="type_file" name="typeFile_field" />
-	<br /><br /><br />
-	<h3>Radio переключатели</h3>
-	<!-- ОЧЕНЬ ВАЖНО! при создании инпутов radio, НЕОБХОДИМО указать одинкаовые значения
-	атрибутам name всем radio переключателем, иначе они будут работать некорректно-->
-	<input type="radio" id="type_radio1" name="typeRadio_field" />
-	<!-- name="typeRadio_field"-->
-	<label for="type_radio1">Радиокнопки (переключатель #1):</label>
-	<br />
-	<input type="radio" id="type_radio2" name="typeRadio_field" />
-	<!-- name="typeRadio_field"-->
-	<label for="type_radio2">Радиокнопки (переключатель #2):</label>
-	<br /><br /><br />
-	<h3>Чекбоксы</h3>
-	<!-- ОЧЕНЬ ВАЖНО! при создании инпутов checkbox, НЕОБХОДИМО указать одинкаовые значения
-	атрибутам name всем чекбоксам, иначе они будут работать некорректно-->
-	<input type="checkbox" id="type_checkbox1" name="typeCheckbox_field" />
-	<!-- name="typeCheckbox_field"-->
-	<label for="type_checkbox1">Чекбокс №1</label>
-	<br />
-	<input type="checkbox" id="type_checkbox2" name="typeCheckbox_field" />
-	<!-- name="typeCheckbox_field"-->
-	<label for="type_checkbox2">Чекбокс №2</label>
-	<hr />
-	<h3>SELECT и OPTION</h3>
-	<label for="select1">Простой select:</label>
-	<select name="select1_field" id="select1">
-		<option value="option11">Опция №1</option>
-		<option value="option21">Опция №2</option>
-		<option value="option31">Опция №3</option>
-		<!--value - значение выбранной опции, может быть любым словом, главное - уникальность-->
-	</select>
-	<br /><br /><br />
-	<label for="select2">Select с выбранной опцией:</label>
-	<select name="select2_field" id="select2">
-		<option value="option12">Опция №1</option>
-		<option value="option22" selected>Опция №2</option>
-		<!--selected - атрибут, который выбирает опцию как по умолчанию-->
-		<option value="option32">Опция №3</option>
-	</select>
-	<br /><br /><br />
-	<label for="select3">Select с недоступной опцией:</label>
-	<select name="select3_field" id="select3">
-		<option value="option03" disabled>Я недоступная опция</option>
-		<!--disabled - атрибут, который делает опцию недоступной для выбора по умолчанию-->
-		<option value="option13">Опция №1</option>
-		<option value="option23">Опция №2</option>
-		<option value="option33">Опция №3</option>
-	</select>
-	<br /><br /><br />
-	<label for="select4">Select с недоступной выбранной опцией:</label>
-	<select name="select4_field" id="select4">
-		<option value="option04" disabled selected>Я недоступная опция</option>
-		<!--пример комбинирования атрибутов-->
-		<option value="option14">Опция №1</option>
-		<option value="option24">Опция №2</option>
-		<option value="option34">Опция №3</option>
-	</select>
-
-	<hr />
-	<h3>Кнопки (button)</h3>
-	<!--Кнопки очень похожи на input, но у них есть толька два основных типа:
-	type="submit" - отправка всех данных формы
-	type="reset" - сброс всех полей формы
-
-	так как у нас нету действия обработки данных при отправке (form action="#"), ничего не будет происходить
-	но reset работает как надо! Попробуйте ввести в самые первые инпуты что либо и нажмите reset :)
-
-	Нужно понимать, что все инпуты, кнопки и select-ы находятсы внутри тега form, значит они взаимо связаны.
-	За пределами приведен пример кнопки reset вне формы. Попробуйте снова ввести в инпуты данные, но уже нжамите на кнопки после недоступных
-	Они не срабатывают потому что находятся вне нашей формы с полями.-->
-	<button type="submit" id="submit_button">Отправить</button>
-	<button type="reset" id="reset_button">Сбросить</button>
-	<br /><br />
-	<button type="submit" id="submit_button2" disabled>
-		Недоступная кнопка отправки
-	</button>
-	<button type="reset" id="reset_button2" disabled>
-		Недоступная кнопка сброса
-	</button>
-</form>
-<br /><br /><br />
-<button type="submit" id="submit_button3">Отправить?</button>
-<button type="reset" id="reset_button3">Сбросить?</button>
-<hr />
-<h2>Примеры использования форм</h2>
-<fieldset style="width: 30%; margin: 15px">
-	<legend>Регистрация студентов</legend>
-	<form action="#" id="registration_form1">
-		<table cellpadding="15px">
-			<tbody>
-			<tr>
-				<td><label for="name1">Имя</label></td>
-				<td><input type="text" name="name_field" id="name1" /></td>
-			</tr>
-			<tr>
-				<td><label for="surname1">Фамилия</label></td>
-				<td><input type="text" name="surname_field" id="surname1" /></td>
-			</tr>
-			<tr>
-				<td><label for="patronymic">Отчество</label></td>
-				<td>
-					<input type="text" name="patronymic_field" id="patronymic" />
-				</td>
-			</tr>
-			<tr>
-				<td><label for="hometown">Родной город</label></td>
-				<td>
-					<select name="hometown_field" id="hometown">
-						<option value="TDK">Талдыкорган</option>
-						<option value="ALA">Алматы</option>
-						<option value="SHM">Шымкек</option>
-						<option value="AST">Нур-Султан</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Пол</td>
-				<td>
-					<input type="radio" name="gender_field" id="male" checked />
-					<label for="male">Мужской</label>
-					<br />
-					<input type="radio" name="gender_field" id="female" />
-					<label for="female">Женский</label>
-				</td>
-			</tr>
-			<tr>
-				<td><label for="birth_date">Дата рождения:</label></td>
-				<td>
-					<input type="date" name="birthDate_field" id="birth_date" />
-				</td>
-			</tr>
-			<tr>
-				<td><label for="previous_education">Образование</label></td>
-				<td>
-					<select name="previousEducation_field" id="previous_education">
-						<option value="RFMSH_ALA">РФМШ (г. Алматы)</option>
-						<option value="NIS_ALA">НИШ (г. Алматы)</option>
-						<option value="KTL_ALA">КТЛ (г. Алматы)</option>
-						<option value="LMNSV_TDK">СШЛ №5 (г. Талдыкорган)</option>
-						<option value="NIS_TDK">НИШ (г. Талдыкорган)</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td><label for="unt_points">Баллы ЕНТ</label></td>
-				<td>
-					<input
-							type="number"
-							name="untPoints_field"
-							id="unt_points"
-							min="0"
-							max="140"
-							value="0"
-							step="1"
-					/>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<button type="submit" id="registration_button">
-						Зарегистрировать
-					</button>
-				</td>
-			</tr>
-			</tbody>
-		</table>
-	</form>
-</fieldset>
-
-<hr />
-<h2>Примеры использваония таблиц</h2>
-<fieldset style="width: 50%; margin: 15px">
-	<legend>Футболисты</legend>
-	<table cellpadding="15px" id="players" border="1" style="margin: auto">
-		<thead>
-		<tr>
-			<th>#</th>
-			<th>Имя</th>
-			<th>Фамилия</th>
-			<th>Клуб</th>
-			<th>Стоимость (euro)</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>1</td>
-			<td>Лионель</td>
-			<td>Месси</td>
-			<td>Барселона</td>
-			<td>70.000.000</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Криштиану</td>
-			<td>Роналду</td>
-			<td>Ювентус</td>
-			<td>50.000.000</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Килиан</td>
-			<td>Мбаппе</td>
-			<td>ПСЖ</td>
-			<td>140.000.000</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Эрлинг</td>
-			<td>Холанд</td>
-			<td>Боруссия Дортмунд</td>
-			<td>120.000.000</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Харри</td>
-			<td>Кейн</td>
-			<td>Тоттенхем</td>
-			<td>80.000.000</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>Эден</td>
-			<td>Азар</td>
-			<td>Реал Мадрид</td>
-			<td>30.000.000</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>Хакан</td>
-			<td>Чалханоглу</td>
-			<td>Милан</td>
-			<td>20.000.000</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>Нголо</td>
-			<td>Канте</td>
-			<td>Челси</td>
-			<td>40.000.000</td>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td>Фил</td>
-			<td>Фоден</td>
-			<td>МанСити</td>
-			<td>110.000.000</td>
-		</tr>
-		</tbody>
-	</table>
-</fieldset>
-
-<hr />
-<h2>Пример кобинирования таблиц и форм</h2>
-
-<fieldset style="width: 50%">
-	<legend>Форма регистарции</legend>
-	<form action="#" id="registration_form">
-		<table cellspacing="17px">
-			<tbody>
-			<tr>
-				<td><label for="name">Имя</label></td>
-				<td><label for="surname">Фамилия</label></td>
-				<td><label for="login1">Логин</label></td>
-			</tr>
-			<tr>
-				<td>
-					<input
-							type="text"
-							id="name"
-							placeholder="Имя"
-							name="name_field"
-					/>
-				</td>
-				<td>
-					<input
-							type="text"
-							id="surname"
-							placeholder="Фамилия"
-							name="surname_field"
-					/>
-				</td>
-				<td>
-					<input
-							type="text"
-							id="login1"
-							placeholder="Логин"
-							name="login_field"
-					/>
-				</td>
-			</tr>
-			<tr>
-				<td><label for="country">Страна</label></td>
-				<td><label for="city">Город</label></td>
-				<td><label for="street">Улица</label></td>
-			</tr>
-			<tr>
-				<td>
-					<select name="country_field" id="country">
-						<option value="KZ">Казахстан</option>
-						<option value="RU">Россия</option>
-						<option value="CN">Китай</option>
-					</select>
-				</td>
-				<td>
-					<select name="city_field" id="city">
-						<option value="TDK">Талдыкорган</option>
-						<option value="ALA">Алматы</option>
-						<option value="SHM">Шымкек</option>
-					</select>
-				</td>
-				<td>
-					<input
-							type="text"
-							name="street_field"
-							id="street"
-							placeholder="Улица"
-					/>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="3">
-					<button type="submit">Загрузить данные</button>
-				</td>
-			</tr>
-			</tbody>
-		</table>
-	</form>
-</fieldset>
-<br /><br />
-
-<fieldset style="width: 10%">
-	<legend>Войти</legend>
-	<form action="#" id="login">
-		<input
-				type="text"
-				name="loginEmail_field"
-				id="login_email"
-				placeholder="Введите email"
-		/>
-		<br /><br />
-		<input
-				type="password"
-				name="loginPassword_field"
-				id="login_password"
-				placeholder="Введите пароль"
-		/>
-		<br /><br />
-		<button type="submit" onclick="">Войти</button>
-		<button type="reset">Сбросить</button>
-	</form>
-</fieldset>
+<body onload="check()">
+<header>
+	<div class="header">
+		<div class="header_logo">
+			<img src="img/logo.png" alt="logo">
+		</div>
+		<div class="header_links">
+			<nav>
+				<ul class="nav_links">
+					<li class="nav_link"><a href="test.html"><i class="fa-solid fa-house"></i>Главная</a></li>
+					<li class="nav_link"><a href=""><i class="fa-solid fa-book"></i>Лекции</a></li>
+					<li class="nav_link"><a href="#"><i class="fa-solid fa-address-card"></i>Контакты</a></li>
+					<li class="nav_link"><a href="#"><i class="fa-solid fa-link"></i>Ссылки</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<main>
+	<div class="wrapper">
+		<aside class="schedule">
+			<div class="aside">
+				<div class="aside_content">
+					<h2><i class="fa-solid fa-calendar-check"></i>Расписание</h2>
+					<hr>
+					<div class="group_sc">
+						<h3 class="group_name">
+							Morrison G#43.1
+						</h3>
+						<ul class="schedule_list">
+							<li class="schedule_item">Понедельник (Практика) <span class="schedule_time">16:30 - 17:30</span></li>
+							<li class="schedule_item">Среда (Практика) <span class="schedule_time">17:00 - 18:00</span></li>
+							<li class="schedule_item">Пятница (Лекция) <span class="schedule_time">16:30 - 17:30</span></li>
+						</ul>
+					</div>
+					<div class="group_sc">
+						<h3 class="group_name">
+							Morrison G#43.1
+						</h3>
+						<ul class="schedule_list">
+							<li class="schedule_item">Вторник (Практика) <span class="schedule_time">10:00 - 11:00</span></li>
+							<li class="schedule_item">Четверг (Практика) <span class="schedule_time">10:00 - 11:00</span></li>
+							<li class="schedule_item">Суббота (Лекция) <span class="schedule_time">10:00 - 11:00</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="aside_content">
+					<h2 style="font-size: 120%"><i class="fa-solid fa-trophy"></i>Топ-проекты недели</h2>
+					<hr>
+					<div class="group_sc">
+						<h3 class="group_name">
+							Morrison G#43.1
+						</h3>
+						<ul class="champion_list">
+							<li class="first_place">
+								Станислав Бессонов - <a href="https://stalker43.github.io/my-life/"
+								                        class="champion_github" target="_blank">Facebook</a>
+							</li>
+							<li class="second_place">
+								None None - <a href="#" class="champion_github" target="_blank">Temp</a>
+							</li>
+							<li class="third_place">
+								None None - <a href="#" class="champion_github" target="_blank">Temp</a>
+							</li>
+						</ul>
+					</div>
+					<div class="group_sc">
+						<h3 class="group_name">
+							Morrison G#43.2
+						</h3>
+						<ul class="champion_list">
+							<li class="first_place">
+								None None - <a href="#" class="champion_github">Temp</a>
+							</li>
+							<li class="second_place">
+								None None - <a href="#" class="champion_github">Temp</a>
+							</li>
+							<li class="third_place">
+								None None - <a href="#" class="champion_github">Temp</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="content">
+			<div class="content_wrapper">
+				<h2><i class="fa-solid fa-newspaper"></i> Обновления</h2>
+				<hr>
+				<div class="post">
+					<h3 class="post_header">Header</h3>
+					<p class="post_paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorum magnam
+						molestias perferendis, quas sint voluptate. Ea eum ex, illo impedit incidunt inventore ipsa ipsum optio
+						porro quidem rerum voluptatem!
+					</p>
+				</div>
+				<h2><i class="fa-solid fa-book-open"></i> Лекции</h2>
+				<hr>
+				<div class="lectures" id="#lectures">
+					<div class="lecture">
+						<img src="https://images.ctfassets.net/hrltx12pl8hq/37lqQySBsACiSCc4i4oCue/4149c19142eee853780c0d650566227f/shutterstock_574261726_thumb.jpg?fit=fill&w=368&h=207" alt="" class="lecture_image">
+						<div class="lecture_body">
+							<h4 class="lecture_name">Лекция №1</h4>
+							<p class="lecture_description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta et expedita iste
+								laborum quod sit. Consequuntur eaque mollitia, nihil obcaecati recusandae sequi! Consectetur
+								itaque nihil officia soluta tempora. Quibusdam?
+							</p>
+							<a href="lectures/lecture1.html">Перейти<i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="lecture">
+						<img src="https://images.ctfassets.net/hrltx12pl8hq/37lqQySBsACiSCc4i4oCue/4149c19142eee853780c0d650566227f/shutterstock_574261726_thumb.jpg?fit=fill&w=368&h=207" alt="" class="lecture_image">
+						<div class="lecture_body">
+							<h4 class="lecture_name">Лекция №2</h4>
+							<p class="lecture_description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta et expedita iste
+								laborum quod sit. Consequuntur eaque mollitia, nihil obcaecati recusandae sequi! Consectetur
+								itaque nihil officia soluta tempora. Quibusdam?
+							</p>
+							<a href="lectures/lecture2.html">Перейти<i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside class="students_list">
+			<div class="aside">
+				<div class="aside_content">
+					<h2><i class="fa-solid fa-users"></i>Список учеников</h2>
+					<hr>
+					<div class="group_li">
+						<h3>Morrison G#43.1</h3>
+						<ul class="students_list">
+							<li class="student_item">Березуев Данил</li>
+							<li class="student_item">Берикбай Бейбит (Только лекция)</li>
+							<li class="student_item">Бессонов Станислав</li>
+							<li class="student_item">Буглак Леонид</li>
+							<li class="student_item">Жаутиков Тамерлан (Только лекция)</li>
+							<li class="student_item">Заиров Абай (Только лекция)</li>
+							<li class="student_item">Иващенко Алексей</li>
+							<li class="student_item">Инсар Аллаяри (Только лекции)</li>
+							<li class="student_item">Ратбек Ахмет</li>
+							<li class="student_item">Умарбаев Олжас</li>
+							<li class="student_item">Шаншарбек Елтай</li>
+							<li class="student_item">Элсенгерт Лия</li>
+							<li class="student_item">Юсупов Тимур (Только лекция)</li>
+						</ul>
+					</div>
+					<div class="group_li">
+						<h3>Morrison G#43.2</h3>
+						<ul class="students_list">
+							<li class="student_item">Абрасулова Айя</li>
+							<li class="student_item">Абужарова Айнур</li>
+							<li class="student_item">Айманова Айгерим</li>
+							<li class="student_item">Бекарыстан Жангир</li>
+							<li class="student_item">Бельфер Полина (Только лекция)</li>
+							<li class="student_item">Буркитжанова Адель (Только практика)</li>
+							<li class="student_item">Ерланкызы Акмерей (Только лекция)</li>
+							<li class="student_item">Жакупов Султан (Только практика)</li>
+							<li class="student_item">Жолымбетова Асима (Только лекция)</li>
+							<li class="student_item">Калдыбек Санжар (Только лекция)</li>
+							<li class="student_item">Кауков Абылай (Только лекция)</li>
+							<li class="student_item">Конырбай Ибрагим</li>
+							<li class="student_item">Кайриден Алдияр</li>
+							<li class="student_item">Манафов Надир (Только практика)</li>
+							<li class="student_item">Монтахаев Арсен (Только лекция)</li>
+							<li class="student_item">Мынбаев Мансур</li>
+							<li class="student_item">Ноян Арман (Только практика)</li>
+							<li class="student_item">Петров Артур (Только лекция)</li>
+							<li class="student_item">Сагидтинова Дарья (Только лекция)</li>
+							<li class="student_item">Хохлов Владимир (Только лекция)</li>
+							<li class="student_item">Худаяров Далер (Только лекция)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</div>
+</main>
+<footer>
+	<div class="footer"></div>
+</footer>
 </body>
 </html>

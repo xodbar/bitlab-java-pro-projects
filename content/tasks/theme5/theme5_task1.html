@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<h1>Task 6</h1>
+<h2>Add:</h2>
+<form action="">
+	<label for="name">Name:</label>
+	<input type="text" id="name"><br><br>
+	<label for="surname">Surname:</label>
+	<input type="text" id="surname"><br><br>
+	<label for="gpa">GPA:</label>
+	<input type="text" id="gpa"><br><br>
+	<button type="submit" onclick="addStudent()">Add</button>
+</form>
+<h2>List</h2>
+<button onclick="listStudents()">List</button>
+<script>
+	let students = [
+        {
+            name:"Zhandos",
+	        surname:"Yessengaziev",
+	        gpa:3.4
+        }
+	];
+
+	function addStudent() {
+        let newName = document.getElementById("name").value;
+        let newSurname = document.getElementById("surname").value;
+        let newGPA = parseFloat(document.getElementById("gpa").value);
+
+
+        if ((newName === null || newName === "") || (newSurname === null || newSurname === "") || newGPA === null || isNaN(newGPA) || newGPA < 0.0 || newGPA > 4.0) {
+            alert("Incorrect input or empty field, try again!")
+        } else {
+            let alreadyExists = false;
+            for (let i = 0; i < students.length; i++)
+                if (students[i].name === newName && students[i].surname === newSurname)
+                    alreadyExists = true;
+
+            if (alreadyExists)
+                alert("This student is already exists!");
+            else {
+                students.push(
+                    {
+                        name: newName,
+                        surname: newSurname,
+                        gpa: newGPA
+                    }
+                );
+                alert("Success")
+            }
+        }
+	}
+
+    function listStudents() {
+        let output = "";
+        for (let i = 0; i < students.length; i++)
+            output += students[i].name + " " + students[i].surname + ": " + students[i].gpa;
+
+        alert(output);
+    }
+</script>
+</body>
+</html>

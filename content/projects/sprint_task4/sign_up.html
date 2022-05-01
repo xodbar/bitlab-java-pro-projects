@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/projects/sprint_task4/sprint_task4.css">
+	<title>Sign Up</title>
+</head>
+<body>
+<div class="container">
+	<fieldset>
+		<legend>Sign Up</legend>
+		<form action="">
+			<label for="reg_name">Your name</label>
+			<input type="text" id="reg_name">
+			<small id="reg_name_log"></small>
+			<label for="reg_login">Your login</label>
+			<input type="text" id="reg_login">
+			<small id="reg_login_log"></small>
+			<label for="reg_password">Your password</label>
+			<input type="text" id="reg_password">
+			<small id="reg_password_log"></small>
+			<div class="controls">
+				<button id="register" onclick="addUserIntoArray()">Register</button>
+				<button id="toLogin" onclick="switchBlocks(12)">To login page</button>
+			</div>
+			<small>By clicking on the submit button, you agree to the processing of personal data</small>
+		</form>
+	</fieldset>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

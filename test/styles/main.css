@@ -1,0 +1,227 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Serif, serif;
+    background-color: #229494;
+}
+
+i {
+    margin: 0 5px;
+}
+
+header {
+    width: 100%;
+    background-color: #efefef;
+    box-shadow: 15px 5px 15px 5px rgba(47, 47, 47, 0.3);
+    position: fixed;
+    z-index: 999;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_logo img {
+    width: 250px;
+}
+
+.header_links {
+    align-items: center;
+}
+
+.nav_links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link {
+    margin: 0 15px;
+}
+
+.nav_link a {
+    text-decoration: none;
+    color: #09a1a8;
+    font-size: 110%;
+}
+
+.nav_link a:hover {
+    color: #1c686c;
+    transition: .3s;
+}
+
+main {
+    width: 100%;
+}
+
+.wrapper {
+    padding-top: 110px;
+    padding-bottom: 25px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper h2 {
+    color: #0f9393;
+}
+
+aside {
+    min-width: 20%;
+    max-width: 20%;
+}
+
+aside hr {
+    margin-top: 0;
+    width: 90%;
+}
+
+.aside {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.aside_content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.champion_list {
+    width: 90%;
+    padding-left: 25px;
+    margin: auto;
+}
+
+.champion_list > li {
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.champion_list > li.first_place {
+    list-style-image: url("../img/medal1.png");
+}
+
+.champion_list > li.second_place {
+    list-style-image: url("../img/medal2.png");
+}
+
+.champion_list > li.third_place {
+    list-style-image: url("../img/medal3.png");
+}
+
+aside:first-child {
+    text-align: left;
+}
+
+aside:last-child {
+    text-align: right;
+}
+
+aside:last-child ul {
+    text-align: left;
+}
+
+.schedule_item {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+ul > .schedule_item:last-child {
+    color: #029191;
+}
+
+.student_item {
+    margin-top: 15px;
+    list-style-type: decimal-leading-zero;
+}
+
+.student_item:nth-child(2n) {
+    color: #006767;
+}
+
+.content {
+    min-width: 45%;
+    max-width: 55%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+}
+
+.content_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content_wrapper h2:first-child {
+    margin-top: 17px;
+}
+
+.content_wrapper h2 {
+    margin-top: 50px;
+}
+
+.lectures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 25px auto;
+}
+
+.lecture {
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.lecture:hover {
+    transform: scale(105%);
+    box-shadow: 5px 10px 5px rgba(3, 3, 3, 0.47);
+    transition: .5s;
+}
+
+
+.lecture_image {
+    width: 101%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.lecture_body {
+    width: 90%;
+    border: 2px solid grey;
+    border-top: 0;
+    padding: 0 15px 15px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.lecture_body h4 {
+    margin-top: 0;
+}
+
+.lecture_body a {
+    text-decoration: none;
+    color: #0f9393;
+}
+
+.lecture_body a:visited {
+    color: #8cbbbb;
+}
+
+.champion_github {
+    text-decoration: none;
+    color: #149d9d;
+}

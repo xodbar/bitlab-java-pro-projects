@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/bb867f31e9.js"
+	        crossorigin="anonymous"></script>
+	<style>
+		#img_gallery {
+			width: 350px;
+			height: 250px;
+		}
+
+		.sub_image {
+			width: 70px;
+			height: 45px;
+			cursor: pointer;
+		}
+
+		#main_image {
+			width: 470px;
+			height: 220px;
+		}
+	</style>
+	<title>Task 5.1 | WEB</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="../../content_navigation.html">< Navigation</a></li>
+			<li>Theme 6 Tasks</li>
+			<li><a href="">Sprint Task 3 ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper" style="background-color: white; border-radius: 15px">
+		<fieldset>
+			<legend>Task 1</legend>
+			<form action="#">
+				<label for="login">Login</label>
+				<input type="text" id="login"><br><br>
+				<label for="password">Password</label>
+				<input type="password" id="password"><br><br>
+				<button id="log_button" onclick="task1()">Log In</button>
+			</form>
+		</fieldset>
+		<fieldset>
+			<legend>Task 2</legend>
+			<button id="increment" style="padding: 0 15px; margin: 15px 10px; background-color: #0d6efd; border: 0; color: white; cursor:pointer;" onclick="increment()">+</button>
+			<span id="counter">0</span>
+			<button id="decrement" style="padding: 0 15px; margin: 15px 10px; background-color: #0d6efd; border: 0; color: white; cursor:pointer;" onclick="decrement()">-</button>
+		</fieldset>
+		<fieldset>
+			<legend>Task 3</legend>
+			<form action="#">
+				<label for="card1">Card:</label>
+				<input type="text" id="card1" style="width: 50px">
+				<label for="card2"></label>
+				<input type="text" id="card2" style="width: 50px">
+				<label for="card3"></label>
+				<input type="text" id="card3" style="width: 50px">
+				<label for="card4"></label>
+				<input type="text" id="card4" style="width: 50px">
+				<br><br>
+				<label for="fullName">Full name</label>
+				<input type="text" id="fullName">
+				<br><br>
+				<label for="cvv">CVV</label>
+				<input type="password" id="cvv" style="width: 25px">\
+				<br><br>
+				<button id="complete" onclick="checkTransaction()">Complete</button>
+			</form>
+		</fieldset>
+		<fieldset>
+			<legend>Task 4</legend>
+			<img src="https://image.shutterstock.com/image-photo/almaty-city-kazakhstan-260nw-1029327304.jpg" alt="" id="img_gallery"><br>
+			<button id="prevImg" style="padding: 0 15px; margin: 15px 10px; background-color: #0d6efd; border: 0; color: white; cursor:pointer;" onclick="prevImage()"><-Prev</button>
+			<button id="nextImg" style="padding: 0 15px; margin: 15px 175px; background-color: #0d6efd; border: 0; color: white; cursor:pointer;" onclick="nextImage()">Next-></button>
+		</fieldset>
+		<fieldset>
+			<legend>Task 5</legend>
+			<img src="https://image.shutterstock.com/image-photo/almaty-city-kazakhstan-260nw-1029327304.jpg" alt="" id="main_image"><br>
+			<img src="https://media.istockphoto.com/photos/city-landscape-on-a-background-of-snowcapped-tian-shan-mountains-in-picture-id1002496248?k=20&m=1002496248&s=612x612&w=0&h=5-vQyp8AgdMwt0EvwCCzUrM1d7ALmrvQXFMjQBRJsOE=" alt="" class="sub_image" id="si1" onclick="scale(1)">
+			<img src="https://freerangestock.com/thumbnail/137610/lonely-man-under-night-sky--starry-sky-over-the-horizon--conte.jpg" alt="" class="sub_image" id="si2" onclick="scale(2)">
+			<img src="https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg" alt="" class="sub_image" id="si3" onclick="scale(3)">
+			<img src="data:image/jpeg;base64,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" alt="" class="sub_image" id="si4" onclick="scale(4)">
+			<img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="" class="sub_image" id="si5" onclick="scale(5)">
+			<img src="https://media.istockphoto.com/photos/city-landscape-on-a-background-of-snowcapped-tian-shan-mountains-in-picture-id1002496248?k=20&m=1002496248&s=612x612&w=0&h=5-vQyp8AgdMwt0EvwCCzUrM1d7ALmrvQXFMjQBRJsOE=" alt="" class="sub_image" id="si6" onclick="scale(6)">
+		</fieldset>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px" height="32px"></a></li>
+	</ul>
+</footer>
+
+<script>
+	counter = 0;
+
+    imageIndex = 0;
+
+    users = [
+
+        {login:"ilyas", password: "qwerty"},
+
+        {login:"eldar", password: "qqqqq"},
+
+        {login:"assylkhan", password: "qweqwe"},
+
+        {login:"anel", password: "asdasd"},
+
+        {login:"alibek", password: "aaaaaa"}
+
+    ];
+
+    cards = [
+        {
+            number: "4400 4401 4402 4403",
+	        cvv: "123",
+	        fullName: "Yessengaziev Zhandos Miyatbekovich"
+        },
+        {
+            number: "4404 4405 4406 4407",
+            cvv: "321",
+            fullName: "User Name Temp1"
+        },
+        {
+            number: "4408 4409 4410 4411",
+            cvv: "666",
+            fullName: "User Name Temp2"
+        }
+    ];
+
+    images = [
+        "https://media.istockphoto.com/photos/city-landscape-on-a-background-of-snowcapped-tian-shan-mountains-in-picture-id1002496248?k=20&m=1002496248&s=612x612&w=0&h=5-vQyp8AgdMwt0EvwCCzUrM1d7ALmrvQXFMjQBRJsOE=",
+	    "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg",
+	    "https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+	    "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80"
+    ]
+
+	function task1() {
+        let login = document.getElementById("login").value;
+        let password = document.getElementById("password").value;
+
+		let successfullyLogin = false;
+
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].login === login && users[i].password === password) {
+                successfullyLogin = true;
+            }
+        }
+
+        if (successfullyLogin) {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("password").style.display = "none";
+            document.getElementById("log_button").style.display = "none";
+            alert("Successfully authenticated");
+        } else {
+            document.getElementById("login").style.border = "1px solid red";
+            document.getElementById("password").style.border = "1px solid red";
+        }
+	}
+
+    function increment() {
+	    counter++;
+        document.getElementById("counter").innerText = counter;
+    }
+
+    function decrement() {
+        counter--;
+        document.getElementById("counter").innerText = counter;
+    }
+
+    function checkTransaction() {
+        let card = document.getElementById("card1").value + " " + document.getElementById("card2").value + " " + document.getElementById("card3").value + " " + document.getElementById("card4").value;
+        let cvv = document.getElementById("cvv").value;
+
+        let success = false;
+        for (let i = 0; i < cards.length; i++) {
+            if (card === cards[i].number && cvv === cards[i].cvv)
+                success = true;
+        }
+
+        if (success)
+            alert("Transaction completed");
+	    else alert("Invalid Data");
+    }
+
+    function nextImage() {
+        if (imageIndex < 3)
+            imageIndex++;
+        else imageIndex = 0;
+        document.getElementById("img_gallery").setAttribute("src", images[imageIndex]);
+    }
+
+    function prevImage() {
+        if (imageIndex > 0)
+            imageIndex++;
+        else imageIndex = 3;
+        document.getElementById("img_gallery").setAttribute("src", images[imageIndex]);
+    }
+
+    function scale(index) {
+        let id = "si" + index;
+	    document.getElementById("main_image").setAttribute("src", document.getElementById(id).getAttribute("src"));
+    }
+</script>
+</body>
+</html>

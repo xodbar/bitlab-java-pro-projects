@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+        url('https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+    padding: 15% 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #6565ea;
+    background-color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:first-child {
+    background-color: #0d6efd;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+button:last-child {
+    background-color: rgba(255, 255, 255, 0);
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 90%;
+}
+
+button:hover {
+    background-color: #005fec;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+small {
+    padding-top: 15px;
+    color: grey;
+}

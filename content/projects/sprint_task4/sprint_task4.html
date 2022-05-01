@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<style>
+        #register_block {
+	        width: 25%;
+	        margin: auto;
+        }
+
+        #register_block form {
+	        display: flex;
+	        flex-direction: column;
+        }
+
+        #register_block form label {
+            margin-top: 25px;
+	        margin-bottom: 5px;
+        }
+
+        #register_block form input {
+            padding: 5px 0;
+        }
+
+        #login_block {
+            width: 25%;
+            margin: auto;
+        }
+
+        #login_block form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #login_block form label {
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        #login_block form input {
+            padding: 5px 0;
+        }
+
+        .controls {
+	        display: flex;
+	        margin-top: 15px;
+	        justify-content: space-between;
+        }
+
+        .controls button {
+	        padding: 5px 15px;
+	        background-color: white;
+	        border: 2px solid blue;
+	        color: blue
+        }
+
+        .controls button:hover {
+            padding: 5px 15px;
+            background-color: blue;
+            border: 2px solid blue;
+            color: white;
+	        cursor: pointer;
+
+        }
+
+        .controls button:first-child {
+            color: white;
+	        background-color: #0d6efd;
+	        border: 0;
+        }
+
+        .controls button:first-child:hover {
+            color: white;
+            background-color: #267eff;
+            border: 0;
+	        transition: .2s;
+	        cursor: pointer;
+        }
+
+	</style>
+	<title>Task 5.1 | WEB</title>
+</head>
+<body onload="initUsers()">
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="../../content_navigation.html">< Navigation</a></li>
+			<li>Theme 6 Tasks</li>
+			<li><a href="">Sprint Task 3 ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper" style="background-color: white; border-radius: 15px">
+		<div id="login_block">
+			<form action="#" id="login">
+				<label for="log_login">Your login</label>
+				<input type="text" id="log_login">
+				<small id="log_login_log"></small>
+				<label for="log_password">Your password</label>
+				<input type="text" id="log_password">
+				<small id="log_password_log"></small>
+				<div class="controls">
+					<button id="log_in" onclick="logIn()">Log In</button>
+					<button id="to_register" onclick="switchBlocks(21)">To reg page</button>
+				</div>
+			</form>
+		</div>
+		<div id="register_block">
+			<form action="#">
+				<label for="reg_name">Your name</label>
+				<input type="text" id="reg_name">
+				<small id="reg_name_log"></small>
+				<label for="reg_login">Your login</label>
+				<input type="text" id="reg_login">
+				<small id="reg_login_log"></small>
+				<label for="reg_password">Your password</label>
+				<input type="text" id="reg_password">
+				<small id="reg_password_log"></small>
+				<div class="controls">
+					<button id="register" onclick="addUserIntoArray()">Register</button>
+					<button id="toLogin" onclick="switchBlocks(12)">To login page</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px" height="32px"></a></li>
+	</ul>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

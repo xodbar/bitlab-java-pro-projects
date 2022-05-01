@@ -1,0 +1,25 @@
+main div.wrapper {
+    box-shadow: none;
+    width: 90%;
+    margin: 80px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.task_items {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.task_item {
+    width: 25%;
+    margin: 0 auto 25px auto;
+    background-color: white;
+    padding: 0 15px 15px 15px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.51);
+    
+}
