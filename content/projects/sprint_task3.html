@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<h1>Hello, World!</h1>
+<script>
+    let users = [
+        {
+            id: 0,
+            name: "Admin",
+            login: "admin",
+            password: "admin123"
+        }
+    ];
+
+    let current = null;
+
+    function mainMenu() {
+        let choice = 1;
+        while (choice !== 6) {
+            choice = parseInt(prompt(
+                "выбери 1 - чтобы зарегистрироваться\n" +
+                "\n" +
+                "    выбери 2 - чтобы войти\n" +
+                "\n" +
+                "    выбери 3 - чтобы увидеть вошедшего пользователя\n" +
+                "\n" +
+                "    выбери 4 - чтобы поменять свой пароль\n" +
+                "\n" +
+                "    выбери 5 - чтобы выйти из аккаунта\n" +
+                "\n" +
+                "    выбери 6 - чтобы выйти из меню"
+            ));
+
+            if (choice === 1)
+                signUp();
+            else if (choice === 2)
+                signIn();
+            else if (choice === 3)
+                showCurrentUser();
+            else if (choice === 4)
+                changePassword();
+            else if (choice === 5)
+                logOut();
+            else if (choice === 6)
+                break;
+        }
+    }
+
+    function signUp() {
+        if (current == null) {
+            let newName = prompt("Enter name:");
+            let newLogin = prompt("Enter login:");
+            let newPassword = prompt("Enter password");
+
+            let authenticated = true;
+            for (let i = 0; i < users.length; i++)
+                if (newLogin === users[i].login)
+                    authenticated = false;
+
+            if (authenticated) {
+                users.push(
+                    {
+                        id: users.length+1,
+                        name: newName,
+                        login: newLogin,
+                        password: newPassword
+                    }
+                );
+                alert("Success");
+            } else alert("User with this login is already exists");
+        } else alert("You've already logged in! Please, log out");
+    }
+
+    function signIn() {
+        if (current == null) {
+            let userLogin = prompt("Enter login:");
+            let userPassword = prompt("Enter password:");
+
+            let authenticated = false;
+
+            let index;
+            for (let i = 0; i < users.length; i++) {
+                if (userLogin === users[i].login && userPassword === users[i].password) {
+                    authenticated = true;
+                    index = i;
+                }
+            }
+
+            if (authenticated) {
+                current = index;
+                alert("Welcome, " + users[current].name + ".");
+            } else alert("Incorrect login or password, try again!");
+        } else alert("You've already signed in!");
+    }
+
+    function showCurrentUser() {
+        if (current != null)
+            alert("Your id: " + users[current].id + "\nYour login: " + users[current].login
+                + "\nYour name: " + users[current].name + "\nYour password: " + users[current].password);
+        else alert("You haven't authorized yet!");
+    }
+
+    function changePassword() {
+        if (current != null) {
+            let newPassword = prompt("Your current password:" + users[current].password + "\n"
+                + "Enter new one:");
+
+            if (newPassword === users[current].password)
+                alert("You can't use same passwords!");
+            else {
+                users[current].password = newPassword;
+                alert("Success");
+            }
+        } else alert("You haven't authorized yet!");
+    }
+
+    function logOut() {
+        if (current != null) {
+            current = null;
+            alert("Success");
+        } else alert("You haven't authorized yet!");
+    }
+
+    mainMenu();
+</script>
+</body>
+</html>
