@@ -25,6 +25,60 @@
 			width: 470px;
 			height: 220px;
 		}
+
+		.log_block {
+			width: 400px;
+		}
+
+		.log_block * {
+			width: 100%;
+		}
+
+		.log_block input {
+			padding: 10px 0;
+			margin-top: 5px;
+		}
+
+		.log_block .input_block {
+            margin-bottom: 25px;
+		}
+
+		.log_block span h4 {
+			margin-top: 0;
+			font-size: 80%;
+		}
+
+		.log_block button {
+			width: 100px;
+			padding: 5px 10px;
+			background-color: black;
+			color: white;
+		}
+
+        .log_block button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            cursor: pointer;
+	        transition: .2s;
+        }
+
+        .currency_converting {
+	        display: flex;
+	        justify-content: center;
+        }
+
+        .currency_converting > div {
+	        margin-right: 25px;
+        }
+
+        .converting_result {
+	        display: flex;
+        }
+
+        .converting_item {
+	        margin-right: 25px;
+        }
+
 	</style>
 	<title>Task 5.1 | WEB</title>
 </head>
@@ -43,13 +97,12 @@
 	<div class="wrapper" style="background-color: white; border-radius: 15px">
 		<fieldset>
 			<legend>Task 1</legend>
-			<form action="#">
 				<label for="login">Login</label>
 				<input type="text" id="login"><br><br>
 				<label for="password">Password</label>
 				<input type="password" id="password"><br><br>
 				<button id="log_button" onclick="task1()">Log In</button>
-			</form>
+			<div id="status_login"></div>
 		</fieldset>
 		<fieldset>
 			<legend>Task 2</legend>
@@ -59,21 +112,21 @@
 		</fieldset>
 		<fieldset>
 			<legend>Task 3</legend>
-			<form action="#">
+			<form action="">
 				<label for="card1">Card:</label>
-				<input type="text" id="card1" style="width: 50px">
+				<input type="text" id="card1" style="width: 50px; text-align: center">
 				<label for="card2"></label>
-				<input type="text" id="card2" style="width: 50px">
+				<input type="text" id="card2" style="width: 50px; text-align: center">
 				<label for="card3"></label>
-				<input type="text" id="card3" style="width: 50px">
+				<input type="text" id="card3" style="width: 50px; text-align: center">
 				<label for="card4"></label>
-				<input type="text" id="card4" style="width: 50px">
+				<input type="text" id="card4" style="width: 50px; text-align: center">
 				<br><br>
 				<label for="fullName">Full name</label>
 				<input type="text" id="fullName">
 				<br><br>
 				<label for="cvv">CVV</label>
-				<input type="password" id="cvv" style="width: 25px">\
+				<input type="password" id="cvv" style="width: 25px">
 				<br><br>
 				<button id="complete" onclick="checkTransaction()">Complete</button>
 			</form>
@@ -94,6 +147,60 @@
 			<img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="" class="sub_image" id="si5" onclick="scale(5)">
 			<img src="https://media.istockphoto.com/photos/city-landscape-on-a-background-of-snowcapped-tian-shan-mountains-in-picture-id1002496248?k=20&m=1002496248&s=612x612&w=0&h=5-vQyp8AgdMwt0EvwCCzUrM1d7ALmrvQXFMjQBRJsOE=" alt="" class="sub_image" id="si6" onclick="scale(6)">
 		</fieldset>
+		<fieldset>
+			<legend>Task 6</legend>
+			<div class="log_block">
+				<form action="">
+					<div class="input_block">
+						<label for="email_field">Email:</label>
+						<input type="email" required id="email_field" onchange="checkEmail()">
+						<span id="traceLog_email"></span>
+					</div>
+					<div class="input_block">
+						<label for="password_field">Password:</label>
+						<input type="password" id="password_field" required onchange="checkPass()">
+						<span id="traceLog_pass"></span>
+					</div>
+					<div class="input_block">
+						<label for="password_repeat">Retype password:</label>
+						<input type="password" id="password_repeat" required onchange="checkRePass()">
+						<span id="traceLog_repass"></span>
+					</div>
+					<button id="register_button">REGISTER</button>
+				</form>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Task 7</legend>
+			<div class="currency_converting">
+				<div class="control_panel">
+					<label for="sum">Enter sum:</label>
+					<div class="inputs">
+						<input type="text" id="sum" onchange="makeConversion()">
+						<label for="currency"></label>
+						<select name="currency" id="currency" onchange="makeConversion()">
+							<option value="kzt">KZT</option>
+							<option value="usd">USD</option>
+							<option value="eur">EUR</option>
+						</select>
+					</div>
+				</div>
+				<div class="converting_result">
+					<div class="converting_item">
+						<h4>KZT (Tenge)</h4>
+						<div class="converting_amount" id="toKzt"></div>
+					</div>
+					<div class="converting_item">
+						<h4>USD (Dollar)</h4>
+						<div class="converting_amount" id="toUsd"></div>
+					</div>
+					<div class="converting_item">
+						<h4>EUR (Euro)</h4>
+						<div class="converting_amount" id="toEur"></div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
 	</div>
 </main>
 
@@ -103,116 +210,7 @@
 	</ul>
 </footer>
 
-<script>
-	counter = 0;
-
-    imageIndex = 0;
-
-    users = [
-
-        {login:"ilyas", password: "qwerty"},
-
-        {login:"eldar", password: "qqqqq"},
-
-        {login:"assylkhan", password: "qweqwe"},
-
-        {login:"anel", password: "asdasd"},
-
-        {login:"alibek", password: "aaaaaa"}
-
-    ];
-
-    cards = [
-        {
-            number: "4400 4401 4402 4403",
-	        cvv: "123",
-	        fullName: "Yessengaziev Zhandos Miyatbekovich"
-        },
-        {
-            number: "4404 4405 4406 4407",
-            cvv: "321",
-            fullName: "User Name Temp1"
-        },
-        {
-            number: "4408 4409 4410 4411",
-            cvv: "666",
-            fullName: "User Name Temp2"
-        }
-    ];
-
-    images = [
-        "https://media.istockphoto.com/photos/city-landscape-on-a-background-of-snowcapped-tian-shan-mountains-in-picture-id1002496248?k=20&m=1002496248&s=612x612&w=0&h=5-vQyp8AgdMwt0EvwCCzUrM1d7ALmrvQXFMjQBRJsOE=",
-	    "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg",
-	    "https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-	    "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80"
-    ]
-
-	function task1() {
-        let login = document.getElementById("login").value;
-        let password = document.getElementById("password").value;
-
-		let successfullyLogin = false;
-
-        for (let i = 0; i < users.length; i++) {
-            if (users[i].login === login && users[i].password === password) {
-                successfullyLogin = true;
-            }
-        }
-
-        if (successfullyLogin) {
-            document.getElementById("login").style.display = "none";
-            document.getElementById("password").style.display = "none";
-            document.getElementById("log_button").style.display = "none";
-            alert("Successfully authenticated");
-        } else {
-            document.getElementById("login").style.border = "1px solid red";
-            document.getElementById("password").style.border = "1px solid red";
-        }
-	}
-
-    function increment() {
-	    counter++;
-        document.getElementById("counter").innerText = counter;
-    }
-
-    function decrement() {
-        counter--;
-        document.getElementById("counter").innerText = counter;
-    }
-
-    function checkTransaction() {
-        let card = document.getElementById("card1").value + " " + document.getElementById("card2").value + " " + document.getElementById("card3").value + " " + document.getElementById("card4").value;
-        let cvv = document.getElementById("cvv").value;
-
-        let success = false;
-        for (let i = 0; i < cards.length; i++) {
-            if (card === cards[i].number && cvv === cards[i].cvv)
-                success = true;
-        }
-
-        if (success)
-            alert("Transaction completed");
-	    else alert("Invalid Data");
-    }
-
-    function nextImage() {
-        if (imageIndex < 3)
-            imageIndex++;
-        else imageIndex = 0;
-        document.getElementById("img_gallery").setAttribute("src", images[imageIndex]);
-    }
-
-    function prevImage() {
-        if (imageIndex > 0)
-            imageIndex++;
-        else imageIndex = 3;
-        document.getElementById("img_gallery").setAttribute("src", images[imageIndex]);
-    }
-
-    function scale(index) {
-        let id = "si" + index;
-	    document.getElementById("main_image").setAttribute("src", document.getElementById(id).getAttribute("src"));
-    }
+<script src="../../../scripts/tasks/scripts_task6.js">
 </script>
 </body>
 </html>

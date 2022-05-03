@@ -8,6 +8,19 @@
 	<title>Sign In</title>
 </head>
 <body>
-
+<div id="login_block">
+	<form action="#" id="login">
+		<label for="log_login">Your login</label>
+		<input type="text" id="log_login">
+		<small id="log_login_log"></small>
+		<label for="log_password">Your password</label>
+		<input type="text" id="log_password">
+		<small id="log_password_log"></small>
+		<div class="controls">
+			<button id="log_in" onclick="logIn()">Log In</button>
+			<button id="to_register" onclick="switchBlocks(21)">To reg page</button>
+		</div>
+	</form>
+</div>
 </body>
 </html>

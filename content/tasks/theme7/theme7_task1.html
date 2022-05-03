@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 7.1 | Web Basics</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../../styles/content.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/bb867f31e9.js"
+	        crossorigin="anonymous"></script>
+	<style>
+        .form_check {
+            width: 320px;
+	        display: flex;
+	        flex-direction: column;
+	        margin: auto;
+        }
+
+         div {
+	        margin-bottom: 15px;
+	        display: flex;
+	        justify-content: space-between;
+        }
+
+         input, select {
+            width: 150px;
+	        padding: 5px 0;
+        }
+
+         button {
+	        padding: 5px 15px;
+	        background-color: black;
+	        color: white;
+            cursor: pointer;
+        }
+
+         button:last-child {
+	        background-color: #c9c9c9;
+	        color: #484848;
+	        border: 0;
+            cursor: pointer;
+        }
+	</style>
+	<title>Task 5.1 | WEB</title>
+</head>
+<body onload="loadDraft()">
+<header>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="../../content_navigation.html">< Navigation</a></li>
+			<li>Theme 6 Tasks</li>
+			<li><a href="">Sprint Task 3 ></a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<div class="wrapper" style="background-color: white; border-radius: 15px">
+			<div class="form_check">
+				<div class="input_line"><label for="t1">NAME</label><input type="text" name="name" id="t1" required></div>
+				<div class="input_line"><label for="t2">SURNAME</label><input type="text" name="surname" id="t2" required></div>
+				<div class="input_line"><label for="t3">COUNTRY</label>
+					<select name="country" id="t3" required>
+						<option value="kz">KZ</option>
+						<option value="ru">RU</option>
+						<option value="cn">CN</option>
+					</select>
+				</div>
+				<div class="input_line"><label for="t4">PHONE NUMBER</label><input required type="text" name="phone" id="t4"></div>
+				<div class="controls">
+					<button id="register">Register</button>
+					<button id="draft" onclick="addDraft()">Safe to Draft</button>
+				</div>
+			</div>
+	</div>
+</main>
+
+<footer>
+	<ul class="footer_links">
+		<li><a href="https://github.com/xodbar/"><img src="../../../img/github.png" alt="" width="32px" height="32px"></a></li>
+	</ul>
+</footer>
+
+<script src="../../../scripts/tasks/scripts_task7.js">
+</script>
+</body>
+</html>
+</body>
+</html>
